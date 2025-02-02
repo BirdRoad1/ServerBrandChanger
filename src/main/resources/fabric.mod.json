@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "serverbrandchanger",
+  "version": "${version}",
+  "name": "serverbrandchanger",
+  "description": "Change your fabric server's brand",
+  "authors": ["brdr1"],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+  "license": "MIT",
+  "icon": "assets/serverbrandchanger/icon.png",
+  "environment": "server",
+  "entrypoints": {
+    "main": ["me.luisito.ServerBrandChanger"]
+  },
+  "mixins": ["serverbrandchanger.mixins.json"],
+  "depends": {
+    "fabricloader": ">=0.16.10",
+    "minecraft": "~1.21.4",
+    "java": ">=21"
+  }
+}
